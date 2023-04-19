@@ -8,20 +8,16 @@ header {
     height: 40px;
     width: 100%;
     position: fixed;
-}
-
-.header {
     background-color: #080222;
-    height: 100%;
-    position: relative;
     transition: 0.25s;
+    z-index: 1;
 }
 
-.header:hover {
+header:hover {
     height: 70px;
 }
 
-.header:hover ul li a {
+header:hover ul li a {
     font-size: 0.75cm;
 }
 
@@ -45,7 +41,7 @@ header {
     justify-content: space-evenly;
 }
 
-.header ul li a {
+header ul li a {
     color: beige;
     font-size: 0.5cm;
     text-decoration: none;
@@ -68,6 +64,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 0;
 }
 
 .sobre {
