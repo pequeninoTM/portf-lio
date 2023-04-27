@@ -1,7 +1,7 @@
 body {
     margin: 0%;
     height: 100vh;
-    background-color: #0e033f;
+    background-image: linear-gradient(135deg, #0e033f, #050118);
 }
 
 header {
@@ -54,24 +54,28 @@ main {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .main {
-    width: 70vw;
+    width: 70%;
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 0;
+    flex-wrap: wrap;
 }
 
 .sobre {
+    min-width: 350px;
     width: 50%;
     height: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     bottom: 0%;
     animation: aparecer 2s ease-in-out;
     position: relative;
@@ -90,17 +94,23 @@ main {
 }
 
 .sobre h1 {
+    bottom: 20px;
     color: beige;
     font-weight: bolder;
     font-size: 1.2cm;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
 }
 
 .sobre p {
+    bottom: 20px;
     color: beige;
+    position: relative;
 }
 
 .foto {
+    margin-top: 40px;
+    min-width: 350px;
     width: 50%;
     height: 50%;
     display: flex;
@@ -110,7 +120,7 @@ main {
 
 #perfil {
     border: 1px solid beige;
-    width: 260px;
+    width: 300px;
     border-radius: 50%;
     animation: 2s aparecer2 ease-in-out;
     position: relative;
@@ -121,6 +131,7 @@ main {
         left: 200px;
         opacity: 0;
     }
+
     to {
         left: 0px;
         opacity: 1;
@@ -141,10 +152,224 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-}   
+}
 
 footer h1 {
     font-size: 0.35cm;
     color: beige;
     font-weight: lighter;
+}
+
+.pro1,
+.pro2,
+.pro3,
+.pro4 {
+    width: 400px;
+    height: 200px;
+    border: 1px solid beige;
+    margin: 60px;
+    position: relative;
+}
+
+.linha1 a,
+.linha2 a {
+    text-decoration: none;
+}
+
+.mainp {
+    width: 70%;
+    height: 70vh;
+    z-index: 0;
+    flex-wrap: wrap;
+}
+
+.linha1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    animation: aparecer 2s ease-in-out;
+}
+
+.linha2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    animation: aparecer2 2s ease-in-out;
+}
+
+.projetinho {
+    color: beige;
+    position: relative;
+    bottom: 65px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1#ProL {
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainL {
+    text-align: center;
+}
+
+.mainL a {
+    text-decoration: none;
+}
+
+.pro1 {
+    background-image: url('files/chatGPT.jpg');
+    background-position: center;
+    background-size: 75%;
+}
+
+.pro2 {
+    background-image: url('files/siteportfolio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -40px;
+}
+
+.pro3 {
+    background-image: url('files/pacman.jpg');
+    background-size: 100%;
+}
+
+.pro4 {
+    background-image: url('files/zedelivery.jpg');
+    background-size: cover;
+    background-position: 0px -40px;
+    background-repeat: no-repeat;
+}
+
+.mainC {
+    width: 70%;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+.imgsC {
+    width: 200px;
+}
+
+#git {
+    width: 150px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email h3 {
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#email {
+    width: 35px;
+    margin-right: 5px;
+}
+
+#linkedin {
+    position: relative;
+    animation: descer 1s ease-in-out;
+}
+
+#insta {
+    position: relative;
+    animation: descer 1.5s ease-in-out;
+}
+
+#git {
+    position: relative;
+    animation: descer 2s ease-in-out;
+}
+
+.email {
+    position: relative;
+    animation: subir 2.5s ease-in-out;
+}
+
+@keyframes subir {
+    from {
+        top: 200px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes descer {
+    from {
+        bottom: 200px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+.mainS {
+    width: 70%;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+.serv {
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logo1 {
+    width: 200px;
+}
+
+#logo2 {
+    height: 117.07px;
+}
+
+#logo3 {
+    height: 117.07px;
+}
+
+.DW,
+.DU,
+.BD {
+    text-align: center;
+    position: relative;
+}
+
+.DW {
+    animation: descer 1s ease-in-out;
+}
+
+.DU {
+    animation: descer 1.5s ease-in-out;
+}
+
+.BD {
+    animation: descer 2s ease-in-out;
 }
